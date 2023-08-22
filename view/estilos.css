@@ -1,0 +1,143 @@
+body 
+{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .contenedor_principal {
+    margin: 20px;
+    height: 100vh; /* Asegúrate de que el contenedor principal ocupe toda la altura de la ventana */
+  }
+  
+.informacion_index {
+ background-image: url('carrusel/imgcarrusel/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%; /* Ajusta el ancho al 100% del contenedor principal */
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+  }
+  .titulo_index {
+    position: absolute;
+    bottom: 50%; /* Ajusta la distancia desde la parte inferior del carrusel */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    animation-name: moveTitle;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* Repite la animación infinitamente */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombreado al título */
+  }
+  
+  @keyframes moveTitle { /* Esto agregará una animación de movimiento al título utilizando keyframes */
+    0% {
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      transform: translateX(-50%) scale(1.1);
+    }
+    100% {
+      transform: translateX(-50%) scale(1);
+    }
+  }
+#textobienvenida
+{
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+/* ################################ Menu Principal ################################### */
+.menu_principal{
+position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  /* border-radius: 5px 5px 0 0; */
+  background-color: rgba(167, 206, 241, 0.8);
+}
+.menu_principal a {
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+  }
+.logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.pie_de_pagina{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(66, 66, 66);
+    padding: 80px;
+    border-radius: 5px;  
+}
+/*##########################################Inicio carrusel ################################# */
+#contenedor_carrusel
+{
+   position: relative;
+}
+.imagencarrusel {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 800px;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio del contenedor */
+  }
+.adelante
+{
+    position: absolute; /* Posicionamiento absoluto */
+    top: 25%; /* Centrar verticalmente los botones */
+    transform: translateY(-50%); /* Ajustar la posición vertical */
+    font-size: 50px; /* Tamaño del texto de los botones */
+    color: white; /* Color del texto de los botones */
+    background-color: rgba(158, 174, 249, 0.5); /* Color de fondo de los botones */
+    border-radius: 50%;
+    padding: 8px; /* Espaciado interno de los botones */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima de los botones */
+    right: 10px;
+}
+.atras 
+{
+    position: absolute; /* Posicionamiento absoluto */
+    top: 25%; /* Centrar verticalmente los botones */
+    transform: translateY(-50%); /* Ajustar la posición vertical */
+    font-size: 50px; /* Tamaño del texto de los botones */
+    color: white; /* Color del texto de los botones */
+    background-color: rgba(158, 174, 249, 0.5); /* Color de fondo de los botones */
+    border-radius: 50%;/*para que queden redondos*/
+    padding: 8px; /* Espaciado interno de los botones */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima de los botones */
+    left: 10px;
+}  
+/*##########################################Fin carrusel ############################### */
+/*########################################## Acerca de ############################### */
+#Acercade 
+{
+  background-color: #f1f1f1;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  width: 500px;
+  height: 500px;
+}
+#d2
+{
+  background-color: #f90909;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}

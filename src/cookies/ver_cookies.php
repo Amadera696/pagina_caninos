@@ -1,0 +1,23 @@
+<?php
+/*
+Para mostrar el valor de las cookies, tengo que usar $_COOKIE, una variable superglobal,
+es un arra asociativo
+*/
+if (isset($_COOKIE['micookie'])) {
+    echo "<h1>".$_COOKIE['micookie']."</h1>";
+
+}
+else
+{
+    echo "No hay cookies";
+}
+if(isset($_COOKIE['unyear'])){
+    echo "<h1>".$_COOKIE['unyear']."</h1>";
+}
+else
+{
+    echo "No hay cookies";
+}
+?>
+<a href="crear_cookies.php">Crear Cookies</a>
+<a href="borrarcookies.php">Borrar Cookies</a>

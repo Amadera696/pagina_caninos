@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor_principal">
+        <div class="Formulario_contacto">
+            <h2>Responde cualquie inquietud</h2>
+            <form action="../controller/contactos.php" method="post">
+
+                <label for="Nombre">Nombre</label><br>
+                <p>
+                    <input type="text" name="name" required="required"><br><br>
+                </p>
+
+                <label for="email">Correo</label><br>
+                <p>
+                    <input type="email" name="email" required="required"><br><br>
+                </p>
+
+                <label for="sexo">Sexo</label><br>
+                <p>
+                    Masculino:<input type="radio" name="sexo" required="required"><br><br>
+                    Femenino:<input type="radio" name="sexo" required="required"><br><br>
+                    Diferente:<input type="radio" name="sexo" required="required"><br><br>
+                </p>
+
+                <label for="fecha_nacimiento">Fecha nacimiento</label>
+                <p> 
+                    <input type="date" name="fecha_nacimiento" > 
+                </p>
+
+                <label for="documento">Cedula</label>
+                <p> 
+                    <input type="file" value="documento"> 
+                </p>
+
+                <label for="comments">Comentarios</label><br>
+                <p>
+                    <textarea name="comments" cols="30" rows="10" ></textarea><br>
+                    <input type="submit" value="Enviar">
+                </p>
+                <label for="comments">¿Cual es su interes?</label>
+                <Select name="interes">
+                    <option value="adoptar">Adoptar</option>
+                    <option value="adquirir">Adquirir un servicio</option>
+                    <option value="informacion">Mas informacion</option>
+                </Select>
+            </form>
+        </div>
+    
+    </div>
+</body>
+</html>
